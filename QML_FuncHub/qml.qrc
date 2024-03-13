@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MyDIYBtn/MyPushBtn.qml</file>
+        <file>MyDIYFunc/ReadFileFromSystem.qml</file>
+        <file>MyDIYBtn/MyLable.qml</file>
+        <file>MyDIYFunc/DataTable.qml</file>
+        <file>MyDIYFunc/MyTabWidgetShow.qml</file>
+        <file>MyDIYBtn/MyTabWidget.qml</file>
+        <file>MyDIYBtn/MyInputBox.qml</file>
+        <file>MyDIYFunc/MyBtnTest.qml</file>
+        <file>MyDIYFunc/RotatingPNG.qml</file>
+        <file>MySrc/picture/fanPole.png</file>
+        <file>MyDIYFunc/DataList.qml</file>
+        <file>MySrc/picture/fanBlade.png</file>
+        <file>MyDIYFunc/MySqlLiteOP.qml</file>
+        <file>MyJS/MysqlLite.js</file>
+        <file>MyDIYFunc/InputAndConfirm.qml</file>
+        <file>MySrc/picture/list_search.png</file>
+        <file>MyDIYFunc/PaginationListView.qml</file>
+    </qresource>
+</RCC>
