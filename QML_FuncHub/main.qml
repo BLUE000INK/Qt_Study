@@ -69,9 +69,17 @@ Window {
         MyPushBtn {
             height: 50
             width: 200
-            btnText: "分页列表"
+            btnText: "分页SwipeView列表"
             onClicked: {
-                loader_FuncWindow.source = "qrc:/MyDIYFunc/PaginationListView.qml"
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/PaginationSwipeView.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
+            btnText: "右键菜单"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/RightMenu.qml"
             }
         }
         MyPushBtn {

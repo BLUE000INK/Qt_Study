@@ -44,7 +44,14 @@ Window {
                 //animExited.start()
             }
             onClicked: {
-                myBtn.forceActiveFocus()
+                if (myInputBox.width == 200) {
+                    if (myInputBox.textInput.text == "") {
+                        myBtn.forceActiveFocus()
+                        animExited.start()
+                    } else {
+                        console.log("窗口跳转" + myInputBox.textInput.text)
+                    }
+                }
             }
         }
     }

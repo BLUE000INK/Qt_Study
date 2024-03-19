@@ -35,4 +35,5 @@ HEADERS += \
 
 DISTFILES += \
     MySrc/picture/风机扇叶.png \
-    MySrc/picture/风机柱.png
+    MySrc/picture/风机柱.png \
+    README.md

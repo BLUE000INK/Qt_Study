@@ -18,5 +18,9 @@
         <file>MyDIYFunc/InputAndConfirm.qml</file>
         <file>MySrc/picture/list_search.png</file>
         <file>MyDIYFunc/PaginationListView.qml</file>
+        <file>MyDIYFunc/PaginationSwipeView.qml</file>
+        <file>MyDIYBtn/MyDataLabel.qml</file>
+        <file>MyDIYFunc/RightMenu.qml</file>
+        <file>MyDIYBtn/MenuDelegate.qml</file>
     </qresource>
 </RCC>
