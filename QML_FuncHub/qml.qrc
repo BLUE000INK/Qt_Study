@@ -22,5 +22,11 @@
         <file>MyDIYBtn/MyDataLabel.qml</file>
         <file>MyDIYFunc/RightMenu.qml</file>
         <file>MyDIYBtn/MenuDelegate.qml</file>
+        <file>MySrc/picture/cat_drop01.png</file>
+        <file>MySrc/picture/cat_drop02.png</file>
+        <file>MySrc/picture/cat_drop03.png</file>
+        <file>MySrc/picture/cat_drop04.png</file>
+        <file>MyDIYFunc/Sprite_Cat.qml</file>
+        <file>MyDIYFunc/MyQThread_Study.qml</file>
     </qresource>
 </RCC>

@@ -10,6 +10,7 @@ SOURCES += \
         MyController/ViewController.cpp \
         MyModel/Model_FoodsList.cpp \
         MyModel/Model_FoodsTable.cpp \
+        MyThread/MyThread01.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -31,7 +32,8 @@ HEADERS += \
     MyClass/MyFood.h \
     MyController/ViewController.h \
     MyModel/Model_FoodsList.h \
-    MyModel/Model_FoodsTable.h
+    MyModel/Model_FoodsTable.h \
+    MyThread/MyThread01.h
 
 DISTFILES += \
     MySrc/picture/风机扇叶.png \

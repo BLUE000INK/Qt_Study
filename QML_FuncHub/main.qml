@@ -1,9 +1,11 @@
 import QtQuick 2.15
 import QtQuick.Window 2.15
+import QtQuick.Controls 2.15
 import "./MyDIYBtn"
 import "./MyDIYFunc"
 
 Window {
+    id: root
     width: 640
     height: 480
     visible: true
@@ -101,10 +103,32 @@ Window {
         MyPushBtn {
             height: 50
             width: 200
+            btnText: "Sprite猫猫"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/Sprite_Cat.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
+            btnText: "QThread探索"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/MyQThread_Study.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
             btnText: "刷新"
             onClicked: {
                 loader_FuncWindow.source = ""
             }
         }
+    }
+
+    onClosing: {
+        console.log("qml  closed")
+        close.accepted = true
+        //myDialog.show()
     }
 }
