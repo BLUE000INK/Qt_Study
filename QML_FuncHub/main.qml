@@ -111,6 +111,14 @@ Window {
         MyPushBtn {
             height: 50
             width: 200
+            btnText: "动画效果测试"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/AnimationTest.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
             btnText: "QThread探索"
             onClicked: {
                 loader_FuncWindow.source = "qrc:/MyDIYFunc/MyQThread_Study.qml"

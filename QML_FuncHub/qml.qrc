@@ -28,5 +28,7 @@
         <file>MySrc/picture/cat_drop04.png</file>
         <file>MyDIYFunc/Sprite_Cat.qml</file>
         <file>MyDIYFunc/MyQThread_Study.qml</file>
+        <file>MyDIYFunc/AnimationTest.qml</file>
+        <file>MyDIYBtn/RectLabel.qml</file>
     </qresource>
 </RCC>
