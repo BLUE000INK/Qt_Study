@@ -127,6 +127,32 @@ Window {
         MyPushBtn {
             height: 50
             width: 200
+            btnText: "QTCP探索"
+            onClicked: {
+
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/MyQTcpStudy.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
+            btnText: "qmlDesigner"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/QMLDesignerTest.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
+            btnText: "QModbusTcp探索"
+            onClicked: {
+
+                //loader_FuncWindow.source = "qrc:/MyDIYFunc/MyQThread_Study.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
             btnText: "刷新"
             onClicked: {
                 loader_FuncWindow.source = ""
@@ -134,9 +160,9 @@ Window {
         }
     }
 
-    onClosing: {
-        console.log("qml  closed")
-        close.accepted = true
-        //myDialog.show()
-    }
+    //    onClosing: {
+    //        console.log("qml  closed")
+    //        close.accepted = true
+    //        //myDialog.show()
+    //    }
 }

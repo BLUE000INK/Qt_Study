@@ -30,5 +30,7 @@
         <file>MyDIYFunc/MyQThread_Study.qml</file>
         <file>MyDIYFunc/AnimationTest.qml</file>
         <file>MyDIYBtn/RectLabel.qml</file>
+        <file>MyDIYFunc/QMLDesignerTest.qml</file>
+        <file>MyDIYFunc/MyQTcpStudy.qml</file>
     </qresource>
 </RCC>

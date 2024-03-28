@@ -7,9 +7,9 @@ Item {
     signal clicked
     Rectangle {
         id: bgRect
+        color: "#00ed5f"
         anchors.fill: parent
         border.width: 2
-        color: "#00ed5f"
         Text {
             id: mylabel
             color: "#000000"

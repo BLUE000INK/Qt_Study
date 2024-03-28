@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Controls 2.15
 
 FocusScope {
     id: root
@@ -11,12 +12,15 @@ FocusScope {
         border.color: textInput.activeFocus ? "#000000" : "#0782d8"
         radius: height / 2
         clip: true
-        TextInput {
+        TextField {
             id: textInput
-            maximumLength: 10
+            maximumLength: 20
             clip: true
             anchors.centerIn: parent
             verticalAlignment: Text.AlignVCenter
+            background: Rectangle {
+                color: "transparent"
+            }
         }
     }
     MouseArea {

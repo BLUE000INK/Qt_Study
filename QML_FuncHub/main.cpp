@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include "./MyController/ViewController.h"
+#include "./MyController/QTcpController.h"
 #include "./MyModel/Model_FoodsTable.h"
 #include "./MyModel/Model_FoodsList.h"
 #include "./MyThread/MyThread01.h"
@@ -23,6 +24,7 @@ int main(int argc, char *argv[])
     engine.setOfflineStoragePath("./");
 
     ViewController* viewController = new ViewController();
+    QTcpController* qTcpController = new QTcpController();
     Model_FoodsTable* model_FoodsTable = new Model_FoodsTable();
     Model_FoodsList* model_FoodsList = new Model_FoodsList();
 
@@ -30,6 +32,8 @@ int main(int argc, char *argv[])
 
     //注册控制器实例
     qmlRegisterSingletonInstance<ViewController>("QML_ViewController", 1, 0, "ViewController", viewController);
+    qmlRegisterSingletonInstance<QTcpController>("QML_QTcpController", 1, 0, "QTcpController", qTcpController);
+
     qmlRegisterSingletonInstance<Model_FoodsTable>("QML_Model_FoodsTable", 1, 0, "Model_FoodsTable", model_FoodsTable);
     qmlRegisterSingletonInstance<Model_FoodsList>("QML_Model_FoodsList", 1, 0, "Model_FoodsList", model_FoodsList);
 

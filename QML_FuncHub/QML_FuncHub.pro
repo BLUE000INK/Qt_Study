@@ -1,12 +1,14 @@
 QT += quick
 QT += core
 QT += sql
+QT += network
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
         MyClass/MyFood.cpp \
+        MyController/QTcpController.cpp \
         MyController/ViewController.cpp \
         MyModel/Model_FoodsList.cpp \
         MyModel/Model_FoodsTable.cpp \
@@ -30,6 +32,7 @@ QMAKE_LFLAGS += -no-pie
 
 HEADERS += \
     MyClass/MyFood.h \
+    MyController/QTcpController.h \
     MyController/ViewController.h \
     MyModel/Model_FoodsList.h \
     MyModel/Model_FoodsTable.h \
