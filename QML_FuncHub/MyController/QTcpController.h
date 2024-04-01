@@ -31,9 +31,9 @@ signals:
     void clientExited();
 
 private:
-    QTcpSocket* mySocket;
-    QTcpServer* myServer;
-    QTimer* timer;
+    QTcpSocket* mySocket = nullptr;
+    QTcpServer* myServer = nullptr;
+    QTimer* timer = nullptr;
 
     bool makeClose;
     void connectLoop(bool val);

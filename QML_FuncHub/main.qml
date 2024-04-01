@@ -111,6 +111,14 @@ Window {
         MyPushBtn {
             height: 50
             width: 200
+            btnText: "Soldier"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/Soldier.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
             btnText: "动画效果测试"
             onClicked: {
                 loader_FuncWindow.source = "qrc:/MyDIYFunc/AnimationTest.qml"

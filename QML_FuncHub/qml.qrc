@@ -32,5 +32,16 @@
         <file>MyDIYBtn/RectLabel.qml</file>
         <file>MyDIYFunc/QMLDesignerTest.qml</file>
         <file>MyDIYFunc/MyQTcpStudy.qml</file>
+        <file>MyDIYFunc/Soldier.qml</file>
+        <file>MySrc/music/Cyberpunk Moonlight Sonata.mp3</file>
+        <file>MySrc/picture/spritePNG/Attack.png</file>
+        <file>MySrc/picture/spritePNG/Dash.png</file>
+        <file>MySrc/picture/spritePNG/Death.png</file>
+        <file>MySrc/picture/spritePNG/Fall.png</file>
+        <file>MySrc/picture/spritePNG/Idle.png</file>
+        <file>MySrc/picture/spritePNG/Jump.png</file>
+        <file>MySrc/picture/spritePNG/RightRun.png</file>
+        <file>MySrc/picture/spritePNG/Take Hit.png</file>
+        <file>MySrc/picture/spritePNG/LeftRun.png</file>
     </qresource>
 </RCC>

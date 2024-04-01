@@ -2,9 +2,7 @@
 
 QTcpController::QTcpController()
 {
-    makeClose = false;
-    timer = new QTimer();
-    timer->setInterval(1000);
+
 }
 
 void QTcpController::initServerEnv()
@@ -66,7 +64,9 @@ void QTcpController::closeServer()
 
 void QTcpController::initClientEnv()
 {
-
+    makeClose = false;
+    timer = new QTimer();
+    timer->setInterval(1000);
 }
 
 bool QTcpController::connectServer(QString ip, QString port)
@@ -74,6 +74,7 @@ bool QTcpController::connectServer(QString ip, QString port)
     mySocket = new QTcpSocket();
 
     mySocket = new QTcpSocket();
+
 
     connect(timer,&QTimer::timeout,this,[=](){
         mySocket->connectToHost(QHostAddress(ip),port.toInt());
@@ -117,21 +118,18 @@ void QTcpController::closeClient()
 
 void QTcpController::releaseSrc()
 {
-    connectLoop(false);
-    if(mySocket != nullptr){
-        if(mySocket->isOpen()){
-            mySocket->close();
-        }
-        delete mySocket;
-        mySocket = NULL;
-    }
     if(myServer != nullptr){
         //myServer->close();
         if(myServer->isListening()){
             myServer->close();
         }
-        delete myServer;
+        myServer->deleteLater();
         myServer = NULL;
+    }else {
+        if(mySocket != nullptr){
+            mySocket->deleteLater();
+            mySocket = NULL;
+        }
     }
     if(timer != nullptr){
         delete timer;

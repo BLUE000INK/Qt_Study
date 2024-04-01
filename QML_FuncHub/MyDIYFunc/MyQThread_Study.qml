@@ -48,4 +48,13 @@ Window {
             }
         }
     }
+
+    //可能是qmltype信息不全，有M16警告，这里屏蔽下
+    //@disable-check M16
+    onClosing: function (closeevent) {
+        //CloseEvent的accepted设置为false就能忽略该事件
+        //closeevent.accepted = false
+        MyThread01.terminate()
+        console.log("窗口关闭")
+    }
 }

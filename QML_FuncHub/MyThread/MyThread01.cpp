@@ -10,6 +10,7 @@ MyThread01::~MyThread01()
     qDebug()<<"线程退出，并回收资源！";
 }
 
+
 void MyThread01::run()
 {
     int i = 0;
