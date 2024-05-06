@@ -32,7 +32,7 @@ Window {
         delegate: Rectangle {
             color: "#4d3ef1"
             border.color: "#000000"
-            MyLable {
+            MyLabel {
                 anchors.fill: parent
                 text: display
             }
@@ -55,7 +55,7 @@ Window {
                     width: table_Foods.columnWidthArray[index]
                     height: 50
                     color: "#d97bd6"
-                    MyLable {
+                    MyLabel {
                         anchors.fill: parent
                         text: Model_FoodsTable.headerData(index, Qt.Horizontal)
                     }

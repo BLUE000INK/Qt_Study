@@ -70,7 +70,7 @@ Window {
             height: 50
             color: "#2eaaaa"
             border.width: 2
-            MyLable {
+            MyLabel {
                 anchors.fill: parent
                 text: styleData.value
             }
@@ -85,12 +85,15 @@ Window {
             anchors.margins: 5
             color: styleData.selected ? "#808080" : "transparent"
             border.width: 2
-            MyLable {
+            MyLabel {
                 anchors.fill: parent
                 text: styleData.value
-                onClicked: {
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
 
-                    myTableView.currentRow = styleData.row
+                        myTableView.currentRow = styleData.row
+                    }
                 }
             }
         }

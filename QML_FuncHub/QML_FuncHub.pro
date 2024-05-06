@@ -2,6 +2,7 @@ QT += quick
 QT += core
 QT += sql
 QT += network
+QT += charts
 QT += serialbus
 
 # You can make your code fail to compile if it uses deprecated APIs.
@@ -9,7 +10,9 @@ QT += serialbus
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        MyClass/MyChart.cpp \
         MyClass/MyFood.cpp \
+        MyController/ChartController.cpp \
         MyController/QTcpController.cpp \
         MyController/ViewController.cpp \
         MyModel/Model_FoodsList.cpp \
@@ -33,7 +36,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 QMAKE_LFLAGS += -no-pie
 
 HEADERS += \
+    MyClass/MyChart.h \
     MyClass/MyFood.h \
+    MyController/ChartController.h \
     MyController/QTcpController.h \
     MyController/ViewController.h \
     MyModel/Model_FoodsList.h \

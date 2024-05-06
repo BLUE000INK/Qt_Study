@@ -30,7 +30,7 @@ Window {
                         height: 50
                         width: 200
                         color: "#4d3ef1"
-                        MyLable {
+                        MyLabel {
                             anchors.fill: parent
                             text: index + 1
                         }
@@ -46,7 +46,7 @@ Window {
                         height: 50
                         width: 200
                         color: "#4d3ef1"
-                        MyLable {
+                        MyLabel {
                             anchors.fill: parent
                             text: foodName
                         }
@@ -62,7 +62,7 @@ Window {
                         height: 50
                         width: 200
                         color: "#4d3ef1"
-                        MyLable {
+                        MyLabel {
                             anchors.fill: parent
                             text: foodPrice
                         }
@@ -78,7 +78,7 @@ Window {
                         height: 50
                         width: 200
                         color: "#4d3ef1"
-                        MyLable {
+                        MyLabel {
                             anchors.fill: parent
                             text: foodCalories
                         }
@@ -94,7 +94,7 @@ Window {
                         height: 50
                         width: 200
                         color: "#4d3ef1"
-                        MyLable {
+                        MyLabel {
                             anchors.fill: parent
                             text: foodWeight
                         }
@@ -110,7 +110,7 @@ Window {
                         height: 50
                         width: 200
                         color: "#4d3ef1"
-                        MyLable {
+                        MyLabel {
                             anchors.fill: parent
                             text: foodDesc
                         }
@@ -149,7 +149,7 @@ Window {
                     height: 50
                     color: "#d97bd6"
                     visible: Model_FoodsList.columnVisible[index]
-                    MyLable {
+                    MyLabel {
                         anchors.fill: parent
                         text: Model_FoodsList.headerData(index, Qt.Horizontal)
                     }

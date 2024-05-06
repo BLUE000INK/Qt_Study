@@ -8,7 +8,7 @@ Item {
     property alias color: myText.color
     property alias elide: myText.elide
     property alias hasElide: text_JudgeElide.hasElide
-    signal clicked
+    property alias myTextHorizontal: myText.horizontalAlignment
     Text {
         id: myText
         color: "#000000"
@@ -35,9 +35,6 @@ Item {
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
-        onClicked: {
-            root.clicked()
-        }
         onEntered: {
             if (root.hasElide)
                 tip_filePath.visible = true

@@ -45,6 +45,7 @@ Window {
             id: rect_server
             anchors.fill: parent
             gradient: Gradient {
+                //@disable-check M16
                 orientation: Gradient.Vertical
                 GradientStop {
                     position: 0
@@ -196,7 +197,7 @@ Window {
                             running: false
                             width: 100
                             height: 100
-                            MyLable {
+                            MyLabel {
                                 width: 300
                                 height: 30
                                 text: "。。。等待客户接入。。。"
@@ -237,6 +238,7 @@ Window {
             id: rect_client
             anchors.fill: parent
             gradient: Gradient {
+                //@disable-check M16
                 orientation: Gradient.Vertical
                 GradientStop {
                     position: 0
@@ -383,7 +385,7 @@ Window {
                             running: false
                             width: 100
                             height: 100
-                            MyLable {
+                            MyLabel {
                                 width: 300
                                 height: 30
                                 text: "。。。连接服务器中。。。"

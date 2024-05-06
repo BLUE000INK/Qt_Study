@@ -15,7 +15,7 @@ Window {
         height: 50
         radius: 25
         anchors.centerIn: parent
-        MyLable {
+        MyLabel {
             id: label_file
             anchors.left: parent.left
             anchors.right: btn_selectFile.left

@@ -73,8 +73,6 @@ bool QTcpController::connectServer(QString ip, QString port)
 {
     mySocket = new QTcpSocket();
 
-    mySocket = new QTcpSocket();
-
 
     connect(timer,&QTimer::timeout,this,[=](){
         mySocket->connectToHost(QHostAddress(ip),port.toInt());

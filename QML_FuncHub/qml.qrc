@@ -3,7 +3,7 @@
         <file>main.qml</file>
         <file>MyDIYBtn/MyPushBtn.qml</file>
         <file>MyDIYFunc/ReadFileFromSystem.qml</file>
-        <file>MyDIYBtn/MyLable.qml</file>
+        <file>MyDIYBtn/MyLabel.qml</file>
         <file>MyDIYFunc/DataTable.qml</file>
         <file>MyDIYFunc/MyTabWidgetShow.qml</file>
         <file>MyDIYBtn/MyTabWidget.qml</file>
@@ -43,5 +43,20 @@
         <file>MySrc/picture/spritePNG/RightRun.png</file>
         <file>MySrc/picture/spritePNG/Take Hit.png</file>
         <file>MySrc/picture/spritePNG/LeftRun.png</file>
+        <file>MyDIYItem/TurStructPop01.qml</file>
+        <file>MyDIYItem/TurStructPop02.qml</file>
+        <file>MyDIYItem/TurStructPop03.qml</file>
+        <file>MyDIYItem/ColorChoice.qml</file>
+        <file>MyDIYItem/TurStructPop04.qml</file>
+        <file>MyDIYItem/TurStructPop05.qml</file>
+        <file>MyDIYItem/TurStructPop06.qml</file>
+        <file>MyDIYItem/MyTimeCurveChart.qml</file>
+        <file>MyDIYFunc/CurveChartTest.qml</file>
+        <file>MyDIYFunc/AAA.qml</file>
+        <file>SCADA_Test/Page_RealTimeCurve.qml</file>
+        <file>SCADA_Test/Window_TurDetailView.qml</file>
+        <file>MyDIYItem/MySeries.qml</file>
+        <file>SCADA_Test/Page_PowerCurve.qml</file>
+        <file>MyDIYItem/MyBarSeries.qml</file>
     </qresource>
 </RCC>

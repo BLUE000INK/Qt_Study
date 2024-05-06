@@ -23,6 +23,22 @@ Window {
         MyPushBtn {
             height: 50
             width: 200
+            btnText: "SCADA—Test"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/SCADA_Test/Window_TurDetailView.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
+            btnText: "btnTest"
+            onClicked: {
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/MyBtnTest.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
             btnText: "读取文件"
             onClicked: {
                 loader_FuncWindow.source = "qrc:/MyDIYFunc/ReadFileFromSystem.qml"
@@ -52,14 +68,7 @@ Window {
                 loader_FuncWindow.source = "qrc:/MyDIYFunc/MyTabWidgetShow.qml"
             }
         }
-        MyPushBtn {
-            height: 50
-            width: 200
-            btnText: "btnTest"
-            onClicked: {
-                loader_FuncWindow.source = "qrc:/MyDIYFunc/MyBtnTest.qml"
-            }
-        }
+
         MyPushBtn {
             height: 50
             width: 200
@@ -156,6 +165,15 @@ Window {
             onClicked: {
 
                 //loader_FuncWindow.source = "qrc:/MyDIYFunc/MyQThread_Study.qml"
+            }
+        }
+        MyPushBtn {
+            height: 50
+            width: 200
+            btnText: "QChart探索"
+            onClicked: {
+
+                loader_FuncWindow.source = "qrc:/MyDIYFunc/CurveChartTest.qml"
             }
         }
         MyPushBtn {

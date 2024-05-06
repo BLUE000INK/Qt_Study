@@ -10,16 +10,5 @@ Window {
     height: 480
     visible: true
     title: qsTr("btnTest")
-    color: "#334455"
-    MyPushBtn {
-        anchors.centerIn: parent
-        width: 50
-        height: 50
-        onClicked: {
-            popTest.open()
-        }
-    }
-    ColorChoice {
-        id: popTest
-    }
+    color: "#2e2f30"
 }
